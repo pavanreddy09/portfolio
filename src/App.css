@@ -1,0 +1,234 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.App {
+  font-family: "Poppins", sans-serif;
+}
+
+header {
+  height: 70px;
+  background-color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 70px;
+  position: sticky;
+  top: 0;
+}
+header h1 {
+  color: #2978b5;
+}
+nav ul {
+  display: flex;
+  gap: 2rem;
+  /* margin-top: 10px; */
+}
+
+ul li {
+  list-style: none;
+}
+ul li a:hover {
+  color: #2978b5;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+.profile {
+  height: 90vh;
+  /* background-color: red; */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.profile h1 {
+  font-size: 4rem;
+  text-align: center;
+}
+.profile p {
+  /* text-align: center; */
+  font-size: 2rem;
+}
+span {
+  color: #2978b5;
+}
+
+.projects {
+  /* height: 90dvh; */
+  background-color: #2978b5;
+}
+
+button {
+  background-color: transparent;
+  border: 2px solid #2978b5;
+  color: #2978b5;
+  padding: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+.profile-contact {
+  width: 300px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 30px;
+}
+
+/* img {
+  margin-bottom: 100px;
+} */
+
+.project-container,
+.skills-container {
+  padding: 15px 9%;
+  padding-bottom: 70px;
+}
+.project-container h2 {
+  text-align: center;
+  padding-bottom: 40px;
+  color: white;
+}
+
+.project-cards,
+.skills-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
+  gap: 15px;
+}
+
+.skills-cards .card {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+}
+
+.card {
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px,
+    rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+  padding: 20px;
+  background-color: white;
+  border-radius: 6px;
+}
+.card:hover {
+  transform: scale(1.03);
+}
+
+.project-cards .card ul {
+  display: flex;
+  gap: 1rem;
+  margin-top: 25px;
+  line-height: 10px;
+  flex-wrap: wrap;
+  color: #2978b5;
+  font-weight: 500;
+}
+.project-container .card ul li {
+  background-color: #d7ecfc;
+  padding: 8px;
+  border-radius: 6px;
+}
+h3 {
+  margin-bottom: 10px;
+}
+
+.livelink {
+  /* font-size: 1.5rem; */
+  /* line-height: 15px; */
+
+  margin-left: 20px;
+}
+.livelink a {
+  display: flex;
+  align-items: center;
+}
+.livelink a:hover {
+  text-decoration: underline;
+  color: #2978b5;
+}
+
+.links {
+  display: flex;
+  /* justify-content: center; */
+  align-items: center;
+  margin-top: 20px;
+}
+
+.visit-github {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 100px;
+  color: white;
+}
+.visit-github a {
+  color: white;
+  text-decoration: underline;
+}
+
+.skills {
+  /* height: 90dvh; */
+  padding: 10px;
+}
+.skills-container h2 {
+  text-align: center;
+  padding-bottom: 30px;
+}
+
+.menu-icon {
+  display: none;
+}
+
+.contact {
+  padding: 15px 9%;
+  /* background-color: #2978b5; */
+}
+.email {
+  text-decoration: underline;
+}
+.email:hover {
+  color: #2978b5;
+}
+.contact-info {
+  padding: 10px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 20px;
+}
+
+@media (max-width: 640px) {
+  header {
+    padding: 20px;
+  }
+  nav {
+    display: none;
+  }
+  .menu-icon {
+    display: block;
+  }
+
+  .skills-cards {
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  }
+  .project-container,
+  .skills-container,
+  .contact {
+    padding: 15px 5%;
+  }
+  .visit-github {
+    margin-top: 20px;
+    text-align: center;
+  }
+}
